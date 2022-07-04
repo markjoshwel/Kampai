@@ -7,12 +7,12 @@ Kampai is a method of full-duplex, end-to-end encrypted, peer-to-peer secure com
 
 ## Quickstart
 
-1. **Install Kampai**
+1. **Get Kampai**
 
    You will need minimally Python 3.7 or newer.
 
    ```text
-   pip install kampai
+   git clone https://github.com/markjoshwel/Kampai.get
    ```
 
    _Alternatively, you can just clone the repository and run `python kampai.py`. The only
@@ -30,13 +30,13 @@ Kampai is a method of full-duplex, end-to-end encrypted, peer-to-peer secure com
    Starting a Kampai session
 
    ```
-   kampai  # equivalent to: kampai create --client_host 127.0.0.1 --client_port 450000
+   python kampai.py  # equivalent to: kampai create --client_host 127.0.0.1 --client_port 450000
    ```
 
    Joining a Kampai session
 
    ```
-   kampai join 127.0.0.2
+   python kampai.py join 127.0.0.2
    ```
 
    For more information, run `kampai --help`.
