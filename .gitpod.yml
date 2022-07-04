@@ -1,0 +1,5 @@
+image:
+  file: .gitpod.Dockerfile
+tasks:
+  - init: ./.gitpod-init.sh || exit 1
+    command: git config --global user.email $GIT_AUTHOR_EMAIL

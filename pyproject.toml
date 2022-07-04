@@ -1,0 +1,31 @@
+# This pyproject.toml requires Poetry 1.2.0 or later.
+
+[tool.poetry]
+name = "kampai"
+version = "0.1.0"
+description = "A method of full-duplex, end-to-end encrypted, peer-to-peer secure communications."
+authors = ["Your Name <you@example.com>"]
+license = "Unlicense"
+readme = "README.md"
+repository = "https://github.com/markjoshwel/Kampai"
+packages = [
+    { include = "kampai.py" },
+]
+
+[tool.poetry.scripts]
+kampai = 'kampai:main'
+
+[tool.poetry.dependencies]
+python = "^3.7"
+PyNaCl = "^1.5.0"
+
+[tool.poetry.group.dev.dependencies]
+mypy = "^0.961"
+black = "^22.6.0"
+
+[tool.black]
+line-length = 90
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
